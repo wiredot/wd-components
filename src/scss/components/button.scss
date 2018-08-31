@@ -1,0 +1,106 @@
+@mixin wdc-button( $background-color, $color ) {
+	background-color: $background-color;
+	color: $color;
+
+	&:hover {
+		background-color: darken( $background-color, 10% );
+	}
+
+	&.outline {
+		border: 2px solid $background-color;
+		background-color: transparent;
+		color: $background-color;
+
+		&:hover {
+			color: darken( $background-color, 10% );
+			border-color: darken( $background-color, 10% );
+		}
+	}
+}
+
+@if ( index($wdc-components, 'button') ) {
+	
+	/* --- WD Components --- Button --- */
+
+	.wdc-button {
+		cursor: pointer;
+		display: inline-block;
+		border-radius: $wdc-button-border-radius;
+		height: $wdc-button-height;
+		padding: $wdc-button-padding;
+		font-size: $wdc-button-font-size;
+		outline: none;
+    	transition: background-color 0.2s;
+    	border: none;
+
+    	@include wdc-button( $wdc-button-background-color, $wdc-button-color );
+
+    	&.primary {
+			@include wdc-button( $wdc-button-primary-background-color, $wdc-button-primary-color );
+		}
+
+		&.secondary {
+			@include wdc-button( $wdc-button-secondary-background-color, $wdc-button-secondary-color );
+		}
+
+		&.tertiary {
+			@include wdc-button( $wdc-button-tertiary-background-color, $wdc-button-tertiary-color );
+		}
+
+		&.red {
+			@include wdc-button( $wdc-color-red, $wdc-color-white );
+		}
+
+		&.orange {
+			@include wdc-button( $wdc-color-orange, $wdc-color-white );
+		}
+
+		&.yellow {
+			@include wdc-button( $wdc-color-yellow, $wdc-color-white );
+		}
+
+		&.olive {
+			@include wdc-button( $wdc-color-olive, $wdc-color-white );
+		}
+
+		&.green {
+			@include wdc-button( $wdc-color-green, $wdc-color-white );
+		}
+
+		&.teal {
+			@include wdc-button( $wdc-color-teal, $wdc-color-white );
+		}
+
+		&.blue {
+			@include wdc-button( $wdc-color-blue, $wdc-color-white );
+		}
+
+		&.violet {
+			@include wdc-button( $wdc-color-violet, $wdc-color-white );
+		}
+
+		&.purple {
+			@include wdc-button( $wdc-color-purple, $wdc-color-white );
+		}
+
+		&.pink {
+			@include wdc-button( $wdc-color-pink, $wdc-color-white );
+		}
+
+		&.brown {
+			@include wdc-button( $wdc-color-brown, $wdc-color-white );
+		}
+
+		&.black {
+			@include wdc-button( $wdc-color-black, $wdc-color-white );
+		}
+
+		&.grey {
+			@include wdc-button( $wdc-color-grey-b, $wdc-color-white );
+		}
+
+		&.small {
+			font-size: $wdc-button-font-size;
+		}
+	}
+}
