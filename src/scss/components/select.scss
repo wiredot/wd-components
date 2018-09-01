@@ -1,0 +1,24 @@
+@if ( index($wdc-components, 'select') ) {
+
+	/* --- WD Components --- Input --- */
+
+	.wdc-select, 
+	.wdc-form select {
+		height: 34px;
+		line-height: 34px;
+		border-radius: 4px;
+		border: 1px solid #ccc;
+		padding: 0 14px;
+		outline: 0;
+		font-size: $wdc-button-font-size;
+		color: $wdc-color-grey-a;
+
+		&:focus {
+			border-color: $wdc-color-blue;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+		}
+	}
+}
