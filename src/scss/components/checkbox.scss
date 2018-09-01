@@ -1,0 +1,39 @@
+@if ( index($wdc-components, 'checkbox') ) {
+
+	/* --- WD Components --- Input --- */
+
+	.wdc-checkbox, 
+	.wdc-form input[type=checkbox] {
+		cursor: pointer;
+		position: relative;
+		// opacity: 0 !important;
+		outline: 0;
+		z-index: 3;
+		width: 17px;
+		height: 17px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+
+		&:before, &:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 17px;
+			height: 17px;
+			content: '';
+			background: #fff;
+			border-radius: .21428571rem;
+			border: 1px solid #d4d4d5;
+		}
+
+		&:checked {
+			&:after {
+				content: '\e800';
+			}
+		}
+
+		&+span {
+			user-select: none;
+		}
+	}
+}

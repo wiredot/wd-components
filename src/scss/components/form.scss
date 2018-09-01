@@ -48,5 +48,9 @@
 			order: 2;
 			flex: 1 0 auto;
 		}
+
+		input[type=checkbox] + label {
+			display: inline-block;
+		}
 	}
 }

@@ -2,9 +2,11 @@
 
 var gulp = require('gulp'),
 	concat = require('gulp-concat'),
-	maps = require('gulp-sourcemaps'),
+	sourcemaps = require('gulp-sourcemaps'),
 	notify = require('gulp-notify'),
 	plumber = require('gulp-plumber'),
+	autoprefixer = require('autoprefixer'),
+	postcss = require('gulp-postcss'),
 	sass = require('gulp-sass');
 
 gulp.task('default', ['dist', 'examples']);
@@ -20,12 +22,16 @@ gulp.task('watch', function() {
 gulp.task('scss', ['examples-scss', 'dist-scss']);
 
 gulp.task('dist-scss', function() {
+	var plugins = [
+		autoprefixer()
+	];
 	return gulp.src( 'src/scss/*.scss')
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-		.pipe(maps.init())
+		.pipe(sourcemaps.init())
 		.pipe(concat('wd-components.css'))
 		.pipe(sass())
-		.pipe(maps.write('./'))
+		.pipe(postcss(plugins))
+		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest( 'dist/css') )
 		.pipe(notify({
 			message: 'CSS generated',
@@ -34,12 +40,16 @@ gulp.task('dist-scss', function() {
 });
 
 gulp.task('examples-scss', function() {
+	var plugins = [
+        autoprefixer()
+    ];
 	return gulp.src( 'examples/src/scss/*.scss')
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-		.pipe(maps.init())
+		.pipe(sourcemaps.init())
 		.pipe(concat('wd-components.css'))
 		.pipe(sass())
-		.pipe(maps.write('./'))
+		.pipe(postcss(plugins))
+		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest( 'examples/css') )
 		.pipe(notify({
 			message: 'CSS generated',
