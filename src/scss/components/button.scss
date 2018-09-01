@@ -36,6 +36,7 @@
 		outline: none;
     	transition: background-color 0.2s;
     	border: none;
+    	margin-bottom: 20px;
 
     	@include wdc-button( $wdc-button-background-color, $wdc-button-color );
 

@@ -1,3 +1,10 @@
+@function wdc-width( $columns ) {
+	$column-ratio: $columns / 12 * 100;
+	$margin: 20;
+
+	@return unquote( 'calc(' + $column-ratio + '% - ' + $margin + 'px)' );
+}
+
 @if ( index($wdc-components, 'form') ) {
 
 	/* --- WD Components --- Form --- */
@@ -5,6 +12,74 @@
 	.wdc-form {
 		
 	}
+
+	.wdc-fields {
+		position: relative;
+		width: calc( 100% + 20px );
+		margin-left: -20px;
+
+		&:after {
+			clear: both;
+			content: "";
+			display: block;
+		}
+		
+		.wdc-field {
+			margin-left: 20px;
+			float: left;
+			box-sizing: border-box;
+
+			&.wide-1 {
+				width: wdc-width(1);
+			}
+
+			&.wide-2 {
+				width: wdc-width(2);
+			}
+
+			&.wide-3 {
+				width: wdc-width(3);
+			}
+
+			&.wide-4 {
+				width: wdc-width(4);
+			}
+
+			&.wide-5 {
+				width: wdc-width(5);
+			}
+
+			&.wide-6 {
+				width: wdc-width(6);
+			}
+
+			&.wide-7 {
+				width: wdc-width(7);
+			}
+
+			&.wide-8 {
+				width: wdc-width(8);
+			}
+
+			&.wide-9 {
+				width: wdc-width(9);
+			}
+
+			&.wide-10 {
+				width: wdc-width(10);
+			}
+
+			&.wide-11 {
+				width: wdc-width(11);
+			}
+
+			&.wide-12 {
+				width: wdc-width(12);
+			}
+		}
+	}
+
+// 12 * 50 + 12 * 20 = 820
 
 	.wdc-field {
 		margin-bottom: 20px;
