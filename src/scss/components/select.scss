@@ -4,14 +4,16 @@
 
 	.wdc-select, 
 	.wdc-form select {
+		font-family: $wdc-font-family;
+		font-size: $wdc-button-font-size;
 		height: 34px;
 		line-height: 34px;
 		border-radius: 4px;
-		border: 1px solid #ccc;
+		border: 1px solid $wdc-color-grey-1;
 		padding: 0 14px;
 		outline: 0;
-		font-size: $wdc-button-font-size;
-		color: $wdc-color-grey-a;
+		color: $wdc-color-grey-5;
+		transition: border-color 0.3s;
 
 		&:focus {
 			border-color: $wdc-color-blue;

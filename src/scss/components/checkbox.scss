@@ -31,8 +31,9 @@
 
 			&:before {
 				border-radius: 3px;
-				border: 1px solid $wdc-color-grey-d;
+				border: 1px solid $wdc-color-grey-1;
 				background: #fff;
+				transition: border-color 0.3s;
 			}
 		}
 

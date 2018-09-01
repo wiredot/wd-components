@@ -1,7 +1,7 @@
 // include theme
 @import 'themes/default';
 
-$wdc-components: () !default;
+$wdc-components: ('button', 'input', 'form', 'select', 'textarea', 'checkbox', 'radio') !default;
 
 // components
 @import 'components/button';

@@ -27,11 +27,9 @@ gulp.task('dist-scss', function() {
 	];
 	return gulp.src( 'src/scss/*.scss')
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-		.pipe(sourcemaps.init())
 		.pipe(concat('wd-components.css'))
 		.pipe(sass())
 		.pipe(postcss(plugins))
-		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest( 'dist/css') )
 		.pipe(notify({
 			message: 'CSS generated',

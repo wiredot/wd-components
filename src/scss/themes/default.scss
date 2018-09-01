@@ -15,19 +15,22 @@ $wdc-color-purple: #a333c8 !default;
 $wdc-color-pink: #e03997 !default;
 $wdc-color-brown: #a5673f !default;
 
-$wdc-color-black: #000 !default;
-$wdc-color-grey-a: #333 !default;
-$wdc-color-grey-b: #666 !default;
-$wdc-color-grey-c: #999 !default;
-$wdc-color-grey-d: #ccc !default;
 $wdc-color-white: #fff !default;
+$wdc-color-grey-1: darken(#fff, 100% / 7) !default;
+$wdc-color-grey-2: darken(#fff, 100% / 7 * 2) !default;
+$wdc-color-grey-3: darken(#fff, 100% / 7 * 3) !default;
+$wdc-color-grey-4: darken(#fff, 100% / 7 * 4) !default;
+$wdc-color-grey-5: darken(#fff, 100% / 7 * 5) !default;
+$wdc-color-grey-6: darken(#fff, 100% / 7 * 6) !default;
+$wdc-color-black: #000 !default;
 
 // --------- Fonts ---------
 $wdc-font-size: 14px !default;
+$wdc-font-family: Lato;
 
 // --------- Button ---------
-$wdc-button-background-color: $wdc-color-grey-d !default;
-$wdc-button-color: $wdc-color-grey-a !default;
+$wdc-button-background-color: $wdc-color-grey-1 !default;
+$wdc-button-color: $wdc-color-grey-5 !default;
 $wdc-button-border-radius: 3px !default;
 $wdc-button-padding: 0 20px !default;
 $wdc-button-height: 36px !default;
