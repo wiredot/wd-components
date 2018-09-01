@@ -517,6 +517,7 @@
   .wdc-field input[type=url],
   .wdc-field input[type=week],
   .wdc-field input[type=search],
+  .wdc-field textarea,
   .wdc-field select {
     order: 2;
     flex: 1 0 auto; }
