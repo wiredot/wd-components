@@ -25,6 +25,7 @@
 		outline: 0;
 		font-size: $wdc-button-font-size;
 		color: $wdc-color-grey-a;
+		transition: border-color 0.2s;
 
 		&:focus {
 			border-color: $wdc-color-blue;

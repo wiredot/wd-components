@@ -17,6 +17,7 @@
 			position: relative;
 			margin-bottom: 3px;
 			display: inline-block;
+			user-select: none;
 
 			&:before, &:after {
 				position: absolute;
@@ -25,10 +26,13 @@
 				width: 17px;
 				height: 17px;
 				content: '';
-				background: #fff;
-				border-radius: .21428571rem;
-				border: 1px solid #d4d4d5;
 				box-sizing: border-box;
+			}
+
+			&:before {
+				border-radius: 3px;
+				border: 1px solid $wdc-color-grey-d;
+				background: #fff;
 			}
 		}
 
@@ -46,8 +50,14 @@
 			}
 		}
 
-		&+span {
-			user-select: none;
+		&:focus {
+
+			&+span {
+				
+				&:before {
+					border-color: $wdc-color-blue;
+				}
+			}
 		}
 	}
 }
