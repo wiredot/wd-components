@@ -1,8 +1,22 @@
-@if ( index($wdc-components, 'button') ) {
+@if ( index($wdc-components, 'input') ) {
 
 	/* --- WD Components --- Input --- */
 
-	.wdc-input {
+	.wdc-input, 
+	.wdc-form input[type=text],
+	.wdc-form input[type=email],
+	.wdc-form input[type=number],
+	.wdc-form input[type=password],
+	.wdc-form input[type=tel],
+	.wdc-form input[type=color],
+	.wdc-form input[type=date],
+	.wdc-form input[type=datetime-local],
+	.wdc-form input[type=month],
+	.wdc-form input[type=range],
+	.wdc-form input[type=time],
+	.wdc-form input[type=url],
+	.wdc-form input[type=week],
+	.wdc-form input[type=search] {
 		height: 34px;
 		line-height: 34px;
 		border-radius: 4px;
@@ -11,10 +25,6 @@
 		outline: 0;
 		font-size: $wdc-button-font-size;
 		color: $wdc-color-grey-a;
-
-		&.fluid {
-			width: 100%;
-		}
 
 		&:focus {
 			border-color: $wdc-color-blue;

@@ -22,7 +22,11 @@
 	
 	/* --- WD Components --- Button --- */
 
-	.wdc-button {
+	.wdc-button,
+	.wdc-form input[type=submit],
+	.wdc-form input[type=reset],
+	.wdc-form input[type=button],
+	.wdc-form button {
 		cursor: pointer;
 		display: inline-block;
 		border-radius: $wdc-button-border-radius;

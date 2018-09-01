@@ -1,5 +1,9 @@
 /* --- WD Components --- Button --- */
-.wdc-button {
+.wdc-button,
+.wdc-form input[type=submit],
+.wdc-form input[type=reset],
+.wdc-form input[type=button],
+.wdc-form button {
   cursor: pointer;
   display: inline-block;
   border-radius: 3px;
@@ -11,212 +15,528 @@
   border: none;
   background-color: #ccc;
   color: #333; }
-  .wdc-button:hover {
+  .wdc-button:hover,
+  .wdc-form input[type=submit]:hover,
+  .wdc-form input[type=reset]:hover,
+  .wdc-form input[type=button]:hover,
+  .wdc-form button:hover {
     background-color: #b3b3b3; }
-  .wdc-button.outline {
+  .wdc-button.outline,
+  .wdc-form input[type=submit].outline,
+  .wdc-form input[type=reset].outline,
+  .wdc-form input[type=button].outline,
+  .wdc-form button.outline {
     box-shadow: 0 0 0 1px #ccc inset;
     background-color: transparent;
     color: #ccc; }
-    .wdc-button.outline:hover {
+    .wdc-button.outline:hover,
+    .wdc-form input[type=submit].outline:hover,
+    .wdc-form input[type=reset].outline:hover,
+    .wdc-form input[type=button].outline:hover,
+    .wdc-form button.outline:hover {
       color: #b3b3b3;
       border-color: #b3b3b3; }
-  .wdc-button.primary {
+  .wdc-button.primary,
+  .wdc-form input[type=submit].primary,
+  .wdc-form input[type=reset].primary,
+  .wdc-form input[type=button].primary,
+  .wdc-form button.primary {
     background-color: #069;
     color: #fff; }
-    .wdc-button.primary:hover {
+    .wdc-button.primary:hover,
+    .wdc-form input[type=submit].primary:hover,
+    .wdc-form input[type=reset].primary:hover,
+    .wdc-form input[type=button].primary:hover,
+    .wdc-form button.primary:hover {
       background-color: #004466; }
-    .wdc-button.primary.outline {
+    .wdc-button.primary.outline,
+    .wdc-form input[type=submit].primary.outline,
+    .wdc-form input[type=reset].primary.outline,
+    .wdc-form input[type=button].primary.outline,
+    .wdc-form button.primary.outline {
       box-shadow: 0 0 0 1px #069 inset;
       background-color: transparent;
       color: #069; }
-      .wdc-button.primary.outline:hover {
+      .wdc-button.primary.outline:hover,
+      .wdc-form input[type=submit].primary.outline:hover,
+      .wdc-form input[type=reset].primary.outline:hover,
+      .wdc-form input[type=button].primary.outline:hover,
+      .wdc-form button.primary.outline:hover {
         color: #004466;
         border-color: #004466; }
-  .wdc-button.secondary {
+  .wdc-button.secondary,
+  .wdc-form input[type=submit].secondary,
+  .wdc-form input[type=reset].secondary,
+  .wdc-form input[type=button].secondary,
+  .wdc-form button.secondary {
     background-color: #980;
     color: #fff; }
-    .wdc-button.secondary:hover {
+    .wdc-button.secondary:hover,
+    .wdc-form input[type=submit].secondary:hover,
+    .wdc-form input[type=reset].secondary:hover,
+    .wdc-form input[type=button].secondary:hover,
+    .wdc-form button.secondary:hover {
       background-color: #665b00; }
-    .wdc-button.secondary.outline {
+    .wdc-button.secondary.outline,
+    .wdc-form input[type=submit].secondary.outline,
+    .wdc-form input[type=reset].secondary.outline,
+    .wdc-form input[type=button].secondary.outline,
+    .wdc-form button.secondary.outline {
       box-shadow: 0 0 0 1px #980 inset;
       background-color: transparent;
       color: #980; }
-      .wdc-button.secondary.outline:hover {
+      .wdc-button.secondary.outline:hover,
+      .wdc-form input[type=submit].secondary.outline:hover,
+      .wdc-form input[type=reset].secondary.outline:hover,
+      .wdc-form input[type=button].secondary.outline:hover,
+      .wdc-form button.secondary.outline:hover {
         color: #665b00;
         border-color: #665b00; }
-  .wdc-button.tertiary {
+  .wdc-button.tertiary,
+  .wdc-form input[type=submit].tertiary,
+  .wdc-form input[type=reset].tertiary,
+  .wdc-form input[type=button].tertiary,
+  .wdc-form button.tertiary {
     background-color: #088;
     color: #fff; }
-    .wdc-button.tertiary:hover {
+    .wdc-button.tertiary:hover,
+    .wdc-form input[type=submit].tertiary:hover,
+    .wdc-form input[type=reset].tertiary:hover,
+    .wdc-form input[type=button].tertiary:hover,
+    .wdc-form button.tertiary:hover {
       background-color: #005555; }
-    .wdc-button.tertiary.outline {
+    .wdc-button.tertiary.outline,
+    .wdc-form input[type=submit].tertiary.outline,
+    .wdc-form input[type=reset].tertiary.outline,
+    .wdc-form input[type=button].tertiary.outline,
+    .wdc-form button.tertiary.outline {
       box-shadow: 0 0 0 1px #088 inset;
       background-color: transparent;
       color: #088; }
-      .wdc-button.tertiary.outline:hover {
+      .wdc-button.tertiary.outline:hover,
+      .wdc-form input[type=submit].tertiary.outline:hover,
+      .wdc-form input[type=reset].tertiary.outline:hover,
+      .wdc-form input[type=button].tertiary.outline:hover,
+      .wdc-form button.tertiary.outline:hover {
         color: #005555;
         border-color: #005555; }
-  .wdc-button.red {
+  .wdc-button.red,
+  .wdc-form input[type=submit].red,
+  .wdc-form input[type=reset].red,
+  .wdc-form input[type=button].red,
+  .wdc-form button.red {
     background-color: #db2828;
     color: #fff; }
-    .wdc-button.red:hover {
+    .wdc-button.red:hover,
+    .wdc-form input[type=submit].red:hover,
+    .wdc-form input[type=reset].red:hover,
+    .wdc-form input[type=button].red:hover,
+    .wdc-form button.red:hover {
       background-color: #b21e1e; }
-    .wdc-button.red.outline {
+    .wdc-button.red.outline,
+    .wdc-form input[type=submit].red.outline,
+    .wdc-form input[type=reset].red.outline,
+    .wdc-form input[type=button].red.outline,
+    .wdc-form button.red.outline {
       box-shadow: 0 0 0 1px #db2828 inset;
       background-color: transparent;
       color: #db2828; }
-      .wdc-button.red.outline:hover {
+      .wdc-button.red.outline:hover,
+      .wdc-form input[type=submit].red.outline:hover,
+      .wdc-form input[type=reset].red.outline:hover,
+      .wdc-form input[type=button].red.outline:hover,
+      .wdc-form button.red.outline:hover {
         color: #b21e1e;
         border-color: #b21e1e; }
-  .wdc-button.orange {
+  .wdc-button.orange,
+  .wdc-form input[type=submit].orange,
+  .wdc-form input[type=reset].orange,
+  .wdc-form input[type=button].orange,
+  .wdc-form button.orange {
     background-color: #f2711c;
     color: #fff; }
-    .wdc-button.orange:hover {
+    .wdc-button.orange:hover,
+    .wdc-form input[type=submit].orange:hover,
+    .wdc-form input[type=reset].orange:hover,
+    .wdc-form input[type=button].orange:hover,
+    .wdc-form button.orange:hover {
       background-color: #cf590c; }
-    .wdc-button.orange.outline {
+    .wdc-button.orange.outline,
+    .wdc-form input[type=submit].orange.outline,
+    .wdc-form input[type=reset].orange.outline,
+    .wdc-form input[type=button].orange.outline,
+    .wdc-form button.orange.outline {
       box-shadow: 0 0 0 1px #f2711c inset;
       background-color: transparent;
       color: #f2711c; }
-      .wdc-button.orange.outline:hover {
+      .wdc-button.orange.outline:hover,
+      .wdc-form input[type=submit].orange.outline:hover,
+      .wdc-form input[type=reset].orange.outline:hover,
+      .wdc-form input[type=button].orange.outline:hover,
+      .wdc-form button.orange.outline:hover {
         color: #cf590c;
         border-color: #cf590c; }
-  .wdc-button.yellow {
+  .wdc-button.yellow,
+  .wdc-form input[type=submit].yellow,
+  .wdc-form input[type=reset].yellow,
+  .wdc-form input[type=button].yellow,
+  .wdc-form button.yellow {
     background-color: #fbbd08;
     color: #fff; }
-    .wdc-button.yellow:hover {
+    .wdc-button.yellow:hover,
+    .wdc-form input[type=submit].yellow:hover,
+    .wdc-form input[type=reset].yellow:hover,
+    .wdc-form input[type=button].yellow:hover,
+    .wdc-form button.yellow:hover {
       background-color: #cd9903; }
-    .wdc-button.yellow.outline {
+    .wdc-button.yellow.outline,
+    .wdc-form input[type=submit].yellow.outline,
+    .wdc-form input[type=reset].yellow.outline,
+    .wdc-form input[type=button].yellow.outline,
+    .wdc-form button.yellow.outline {
       box-shadow: 0 0 0 1px #fbbd08 inset;
       background-color: transparent;
       color: #fbbd08; }
-      .wdc-button.yellow.outline:hover {
+      .wdc-button.yellow.outline:hover,
+      .wdc-form input[type=submit].yellow.outline:hover,
+      .wdc-form input[type=reset].yellow.outline:hover,
+      .wdc-form input[type=button].yellow.outline:hover,
+      .wdc-form button.yellow.outline:hover {
         color: #cd9903;
         border-color: #cd9903; }
-  .wdc-button.olive {
+  .wdc-button.olive,
+  .wdc-form input[type=submit].olive,
+  .wdc-form input[type=reset].olive,
+  .wdc-form input[type=button].olive,
+  .wdc-form button.olive {
     background-color: #b5cc18;
     color: #fff; }
-    .wdc-button.olive:hover {
+    .wdc-button.olive:hover,
+    .wdc-form input[type=submit].olive:hover,
+    .wdc-form input[type=reset].olive:hover,
+    .wdc-form input[type=button].olive:hover,
+    .wdc-form button.olive:hover {
       background-color: #8d9e13; }
-    .wdc-button.olive.outline {
+    .wdc-button.olive.outline,
+    .wdc-form input[type=submit].olive.outline,
+    .wdc-form input[type=reset].olive.outline,
+    .wdc-form input[type=button].olive.outline,
+    .wdc-form button.olive.outline {
       box-shadow: 0 0 0 1px #b5cc18 inset;
       background-color: transparent;
       color: #b5cc18; }
-      .wdc-button.olive.outline:hover {
+      .wdc-button.olive.outline:hover,
+      .wdc-form input[type=submit].olive.outline:hover,
+      .wdc-form input[type=reset].olive.outline:hover,
+      .wdc-form input[type=button].olive.outline:hover,
+      .wdc-form button.olive.outline:hover {
         color: #8d9e13;
         border-color: #8d9e13; }
-  .wdc-button.green {
+  .wdc-button.green,
+  .wdc-form input[type=submit].green,
+  .wdc-form input[type=reset].green,
+  .wdc-form input[type=button].green,
+  .wdc-form button.green {
     background-color: #21ba45;
     color: #fff; }
-    .wdc-button.green:hover {
+    .wdc-button.green:hover,
+    .wdc-form input[type=submit].green:hover,
+    .wdc-form input[type=reset].green:hover,
+    .wdc-form input[type=button].green:hover,
+    .wdc-form button.green:hover {
       background-color: #198f35; }
-    .wdc-button.green.outline {
+    .wdc-button.green.outline,
+    .wdc-form input[type=submit].green.outline,
+    .wdc-form input[type=reset].green.outline,
+    .wdc-form input[type=button].green.outline,
+    .wdc-form button.green.outline {
       box-shadow: 0 0 0 1px #21ba45 inset;
       background-color: transparent;
       color: #21ba45; }
-      .wdc-button.green.outline:hover {
+      .wdc-button.green.outline:hover,
+      .wdc-form input[type=submit].green.outline:hover,
+      .wdc-form input[type=reset].green.outline:hover,
+      .wdc-form input[type=button].green.outline:hover,
+      .wdc-form button.green.outline:hover {
         color: #198f35;
         border-color: #198f35; }
-  .wdc-button.teal {
+  .wdc-button.teal,
+  .wdc-form input[type=submit].teal,
+  .wdc-form input[type=reset].teal,
+  .wdc-form input[type=button].teal,
+  .wdc-form button.teal {
     background-color: #00b5ad;
     color: #fff; }
-    .wdc-button.teal:hover {
+    .wdc-button.teal:hover,
+    .wdc-form input[type=submit].teal:hover,
+    .wdc-form input[type=reset].teal:hover,
+    .wdc-form input[type=button].teal:hover,
+    .wdc-form button.teal:hover {
       background-color: #00827c; }
-    .wdc-button.teal.outline {
+    .wdc-button.teal.outline,
+    .wdc-form input[type=submit].teal.outline,
+    .wdc-form input[type=reset].teal.outline,
+    .wdc-form input[type=button].teal.outline,
+    .wdc-form button.teal.outline {
       box-shadow: 0 0 0 1px #00b5ad inset;
       background-color: transparent;
       color: #00b5ad; }
-      .wdc-button.teal.outline:hover {
+      .wdc-button.teal.outline:hover,
+      .wdc-form input[type=submit].teal.outline:hover,
+      .wdc-form input[type=reset].teal.outline:hover,
+      .wdc-form input[type=button].teal.outline:hover,
+      .wdc-form button.teal.outline:hover {
         color: #00827c;
         border-color: #00827c; }
-  .wdc-button.blue {
+  .wdc-button.blue,
+  .wdc-form input[type=submit].blue,
+  .wdc-form input[type=reset].blue,
+  .wdc-form input[type=button].blue,
+  .wdc-form button.blue {
     background-color: #2185d0;
     color: #fff; }
-    .wdc-button.blue:hover {
+    .wdc-button.blue:hover,
+    .wdc-form input[type=submit].blue:hover,
+    .wdc-form input[type=reset].blue:hover,
+    .wdc-form input[type=button].blue:hover,
+    .wdc-form button.blue:hover {
       background-color: #1a69a4; }
-    .wdc-button.blue.outline {
+    .wdc-button.blue.outline,
+    .wdc-form input[type=submit].blue.outline,
+    .wdc-form input[type=reset].blue.outline,
+    .wdc-form input[type=button].blue.outline,
+    .wdc-form button.blue.outline {
       box-shadow: 0 0 0 1px #2185d0 inset;
       background-color: transparent;
       color: #2185d0; }
-      .wdc-button.blue.outline:hover {
+      .wdc-button.blue.outline:hover,
+      .wdc-form input[type=submit].blue.outline:hover,
+      .wdc-form input[type=reset].blue.outline:hover,
+      .wdc-form input[type=button].blue.outline:hover,
+      .wdc-form button.blue.outline:hover {
         color: #1a69a4;
         border-color: #1a69a4; }
-  .wdc-button.violet {
+  .wdc-button.violet,
+  .wdc-form input[type=submit].violet,
+  .wdc-form input[type=reset].violet,
+  .wdc-form input[type=button].violet,
+  .wdc-form button.violet {
     background-color: #6435c9;
     color: #fff; }
-    .wdc-button.violet:hover {
+    .wdc-button.violet:hover,
+    .wdc-form input[type=submit].violet:hover,
+    .wdc-form input[type=reset].violet:hover,
+    .wdc-form input[type=button].violet:hover,
+    .wdc-form button.violet:hover {
       background-color: #502aa1; }
-    .wdc-button.violet.outline {
+    .wdc-button.violet.outline,
+    .wdc-form input[type=submit].violet.outline,
+    .wdc-form input[type=reset].violet.outline,
+    .wdc-form input[type=button].violet.outline,
+    .wdc-form button.violet.outline {
       box-shadow: 0 0 0 1px #6435c9 inset;
       background-color: transparent;
       color: #6435c9; }
-      .wdc-button.violet.outline:hover {
+      .wdc-button.violet.outline:hover,
+      .wdc-form input[type=submit].violet.outline:hover,
+      .wdc-form input[type=reset].violet.outline:hover,
+      .wdc-form input[type=button].violet.outline:hover,
+      .wdc-form button.violet.outline:hover {
         color: #502aa1;
         border-color: #502aa1; }
-  .wdc-button.purple {
+  .wdc-button.purple,
+  .wdc-form input[type=submit].purple,
+  .wdc-form input[type=reset].purple,
+  .wdc-form input[type=button].purple,
+  .wdc-form button.purple {
     background-color: #a333c8;
     color: #fff; }
-    .wdc-button.purple:hover {
+    .wdc-button.purple:hover,
+    .wdc-form input[type=submit].purple:hover,
+    .wdc-form input[type=reset].purple:hover,
+    .wdc-form input[type=button].purple:hover,
+    .wdc-form button.purple:hover {
       background-color: #82299f; }
-    .wdc-button.purple.outline {
+    .wdc-button.purple.outline,
+    .wdc-form input[type=submit].purple.outline,
+    .wdc-form input[type=reset].purple.outline,
+    .wdc-form input[type=button].purple.outline,
+    .wdc-form button.purple.outline {
       box-shadow: 0 0 0 1px #a333c8 inset;
       background-color: transparent;
       color: #a333c8; }
-      .wdc-button.purple.outline:hover {
+      .wdc-button.purple.outline:hover,
+      .wdc-form input[type=submit].purple.outline:hover,
+      .wdc-form input[type=reset].purple.outline:hover,
+      .wdc-form input[type=button].purple.outline:hover,
+      .wdc-form button.purple.outline:hover {
         color: #82299f;
         border-color: #82299f; }
-  .wdc-button.pink {
+  .wdc-button.pink,
+  .wdc-form input[type=submit].pink,
+  .wdc-form input[type=reset].pink,
+  .wdc-form input[type=button].pink,
+  .wdc-form button.pink {
     background-color: #e03997;
     color: #fff; }
-    .wdc-button.pink:hover {
+    .wdc-button.pink:hover,
+    .wdc-form input[type=submit].pink:hover,
+    .wdc-form input[type=reset].pink:hover,
+    .wdc-form input[type=button].pink:hover,
+    .wdc-form button.pink:hover {
       background-color: #c71f7e; }
-    .wdc-button.pink.outline {
+    .wdc-button.pink.outline,
+    .wdc-form input[type=submit].pink.outline,
+    .wdc-form input[type=reset].pink.outline,
+    .wdc-form input[type=button].pink.outline,
+    .wdc-form button.pink.outline {
       box-shadow: 0 0 0 1px #e03997 inset;
       background-color: transparent;
       color: #e03997; }
-      .wdc-button.pink.outline:hover {
+      .wdc-button.pink.outline:hover,
+      .wdc-form input[type=submit].pink.outline:hover,
+      .wdc-form input[type=reset].pink.outline:hover,
+      .wdc-form input[type=button].pink.outline:hover,
+      .wdc-form button.pink.outline:hover {
         color: #c71f7e;
         border-color: #c71f7e; }
-  .wdc-button.brown {
+  .wdc-button.brown,
+  .wdc-form input[type=submit].brown,
+  .wdc-form input[type=reset].brown,
+  .wdc-form input[type=button].brown,
+  .wdc-form button.brown {
     background-color: #a5673f;
     color: #fff; }
-    .wdc-button.brown:hover {
+    .wdc-button.brown:hover,
+    .wdc-form input[type=submit].brown:hover,
+    .wdc-form input[type=reset].brown:hover,
+    .wdc-form input[type=button].brown:hover,
+    .wdc-form button.brown:hover {
       background-color: #805031; }
-    .wdc-button.brown.outline {
+    .wdc-button.brown.outline,
+    .wdc-form input[type=submit].brown.outline,
+    .wdc-form input[type=reset].brown.outline,
+    .wdc-form input[type=button].brown.outline,
+    .wdc-form button.brown.outline {
       box-shadow: 0 0 0 1px #a5673f inset;
       background-color: transparent;
       color: #a5673f; }
-      .wdc-button.brown.outline:hover {
+      .wdc-button.brown.outline:hover,
+      .wdc-form input[type=submit].brown.outline:hover,
+      .wdc-form input[type=reset].brown.outline:hover,
+      .wdc-form input[type=button].brown.outline:hover,
+      .wdc-form button.brown.outline:hover {
         color: #805031;
         border-color: #805031; }
-  .wdc-button.black {
+  .wdc-button.black,
+  .wdc-form input[type=submit].black,
+  .wdc-form input[type=reset].black,
+  .wdc-form input[type=button].black,
+  .wdc-form button.black {
     background-color: #000;
     color: #fff; }
-    .wdc-button.black:hover {
+    .wdc-button.black:hover,
+    .wdc-form input[type=submit].black:hover,
+    .wdc-form input[type=reset].black:hover,
+    .wdc-form input[type=button].black:hover,
+    .wdc-form button.black:hover {
       background-color: black; }
-    .wdc-button.black.outline {
+    .wdc-button.black.outline,
+    .wdc-form input[type=submit].black.outline,
+    .wdc-form input[type=reset].black.outline,
+    .wdc-form input[type=button].black.outline,
+    .wdc-form button.black.outline {
       box-shadow: 0 0 0 1px #000 inset;
       background-color: transparent;
       color: #000; }
-      .wdc-button.black.outline:hover {
+      .wdc-button.black.outline:hover,
+      .wdc-form input[type=submit].black.outline:hover,
+      .wdc-form input[type=reset].black.outline:hover,
+      .wdc-form input[type=button].black.outline:hover,
+      .wdc-form button.black.outline:hover {
         color: black;
         border-color: black; }
-  .wdc-button.grey {
+  .wdc-button.grey,
+  .wdc-form input[type=submit].grey,
+  .wdc-form input[type=reset].grey,
+  .wdc-form input[type=button].grey,
+  .wdc-form button.grey {
     background-color: #666;
     color: #fff; }
-    .wdc-button.grey:hover {
+    .wdc-button.grey:hover,
+    .wdc-form input[type=submit].grey:hover,
+    .wdc-form input[type=reset].grey:hover,
+    .wdc-form input[type=button].grey:hover,
+    .wdc-form button.grey:hover {
       background-color: #4d4d4d; }
-    .wdc-button.grey.outline {
+    .wdc-button.grey.outline,
+    .wdc-form input[type=submit].grey.outline,
+    .wdc-form input[type=reset].grey.outline,
+    .wdc-form input[type=button].grey.outline,
+    .wdc-form button.grey.outline {
       box-shadow: 0 0 0 1px #666 inset;
       background-color: transparent;
       color: #666; }
-      .wdc-button.grey.outline:hover {
+      .wdc-button.grey.outline:hover,
+      .wdc-form input[type=submit].grey.outline:hover,
+      .wdc-form input[type=reset].grey.outline:hover,
+      .wdc-form input[type=button].grey.outline:hover,
+      .wdc-form button.grey.outline:hover {
         color: #4d4d4d;
         border-color: #4d4d4d; }
-  .wdc-button.small {
+  .wdc-button.small,
+  .wdc-form input[type=submit].small,
+  .wdc-form input[type=reset].small,
+  .wdc-form input[type=button].small,
+  .wdc-form button.small {
     font-size: 14px; }
 
+/* --- WD Components --- Form --- */
+.wdc-field {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; }
+  .wdc-field label {
+    display: block;
+    margin-bottom: 5px;
+    order: 1; }
+  .wdc-field input:required + label:after {
+    content: '*';
+    color: #db2828; }
+  .wdc-field input[type=text],
+  .wdc-field input[type=email],
+  .wdc-field input[type=number],
+  .wdc-field input[type=password],
+  .wdc-field input[type=tel],
+  .wdc-field input[type=color],
+  .wdc-field input[type=date],
+  .wdc-field input[type=datetime-local],
+  .wdc-field input[type=month],
+  .wdc-field input[type=range],
+  .wdc-field input[type=time],
+  .wdc-field input[type=url],
+  .wdc-field input[type=week],
+  .wdc-field input[type=search],
+  .wdc-field select {
+    order: 2;
+    flex: 1 0 auto; }
+
 /* --- WD Components --- Input --- */
-.wdc-input {
+.wdc-input,
+.wdc-form input[type=text],
+.wdc-form input[type=email],
+.wdc-form input[type=number],
+.wdc-form input[type=password],
+.wdc-form input[type=tel],
+.wdc-form input[type=color],
+.wdc-form input[type=date],
+.wdc-form input[type=datetime-local],
+.wdc-form input[type=month],
+.wdc-form input[type=range],
+.wdc-form input[type=time],
+.wdc-form input[type=url],
+.wdc-form input[type=week],
+.wdc-form input[type=search] {
   height: 34px;
   line-height: 34px;
   border-radius: 4px;
@@ -225,15 +545,69 @@
   outline: 0;
   font-size: 14px;
   color: #333; }
-  .wdc-input.fluid {
-    width: 100%; }
-  .wdc-input:focus {
+  .wdc-input:focus,
+  .wdc-form input[type=text]:focus,
+  .wdc-form input[type=email]:focus,
+  .wdc-form input[type=number]:focus,
+  .wdc-form input[type=password]:focus,
+  .wdc-form input[type=tel]:focus,
+  .wdc-form input[type=color]:focus,
+  .wdc-form input[type=date]:focus,
+  .wdc-form input[type=datetime-local]:focus,
+  .wdc-form input[type=month]:focus,
+  .wdc-form input[type=range]:focus,
+  .wdc-form input[type=time]:focus,
+  .wdc-form input[type=url]:focus,
+  .wdc-form input[type=week]:focus,
+  .wdc-form input[type=search]:focus {
     border-color: #2185d0; }
-  .wdc-input::placeholder {
+  .wdc-input::placeholder,
+  .wdc-form input[type=text]::placeholder,
+  .wdc-form input[type=email]::placeholder,
+  .wdc-form input[type=number]::placeholder,
+  .wdc-form input[type=password]::placeholder,
+  .wdc-form input[type=tel]::placeholder,
+  .wdc-form input[type=color]::placeholder,
+  .wdc-form input[type=date]::placeholder,
+  .wdc-form input[type=datetime-local]::placeholder,
+  .wdc-form input[type=month]::placeholder,
+  .wdc-form input[type=range]::placeholder,
+  .wdc-form input[type=time]::placeholder,
+  .wdc-form input[type=url]::placeholder,
+  .wdc-form input[type=week]::placeholder,
+  .wdc-form input[type=search]::placeholder {
     color: #ccc; }
-  .wdc-input::-ms-input-placeholder {
+  .wdc-input::-ms-input-placeholder,
+  .wdc-form input[type=text]::-ms-input-placeholder,
+  .wdc-form input[type=email]::-ms-input-placeholder,
+  .wdc-form input[type=number]::-ms-input-placeholder,
+  .wdc-form input[type=password]::-ms-input-placeholder,
+  .wdc-form input[type=tel]::-ms-input-placeholder,
+  .wdc-form input[type=color]::-ms-input-placeholder,
+  .wdc-form input[type=date]::-ms-input-placeholder,
+  .wdc-form input[type=datetime-local]::-ms-input-placeholder,
+  .wdc-form input[type=month]::-ms-input-placeholder,
+  .wdc-form input[type=range]::-ms-input-placeholder,
+  .wdc-form input[type=time]::-ms-input-placeholder,
+  .wdc-form input[type=url]::-ms-input-placeholder,
+  .wdc-form input[type=week]::-ms-input-placeholder,
+  .wdc-form input[type=search]::-ms-input-placeholder {
     color: #ccc; }
-  .wdc-input:disabled {
+  .wdc-input:disabled,
+  .wdc-form input[type=text]:disabled,
+  .wdc-form input[type=email]:disabled,
+  .wdc-form input[type=number]:disabled,
+  .wdc-form input[type=password]:disabled,
+  .wdc-form input[type=tel]:disabled,
+  .wdc-form input[type=color]:disabled,
+  .wdc-form input[type=date]:disabled,
+  .wdc-form input[type=datetime-local]:disabled,
+  .wdc-form input[type=month]:disabled,
+  .wdc-form input[type=range]:disabled,
+  .wdc-form input[type=time]:disabled,
+  .wdc-form input[type=url]:disabled,
+  .wdc-form input[type=week]:disabled,
+  .wdc-form input[type=search]:disabled {
     opacity: 0.5; }
 
 /*# sourceMappingURL=wd-components.css.map */

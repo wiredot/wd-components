@@ -1,0 +1,51 @@
+@if ( index($wdc-components, 'form') ) {
+
+	/* --- WD Components --- Form --- */
+
+	.wdc-form {
+		
+	}
+
+	.wdc-field {
+		margin-bottom: 20px;
+		display: flex;
+        flex-direction: column;
+
+		&.required {
+			
+		}
+
+		label {
+			display: block;
+			margin-bottom: 5px;
+			order: 1;
+		}
+
+		input:required + label {
+			
+			&:after {
+				content: '*';
+				color: $wdc-color-red;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=number],
+		input[type=password],
+		input[type=tel],
+		input[type=color],
+		input[type=date],
+		input[type=datetime-local],
+		input[type=month],
+		input[type=range],
+		input[type=time],
+		input[type=url],
+		input[type=week],
+		input[type=search],
+		select {
+			order: 2;
+			flex: 1 0 auto;
+		}
+	}
+}

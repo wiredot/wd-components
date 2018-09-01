@@ -1,5 +1,5 @@
 $wdc-color-a: #069;
 
-$wdc-components: ('button');
+$wdc-components: ('button', 'input', 'form');
 
 @import '../../../src/scss/wd-components';
