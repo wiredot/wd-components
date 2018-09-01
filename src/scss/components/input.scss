@@ -1,0 +1,35 @@
+@if ( index($wdc-components, 'button') ) {
+
+	/* --- WD Components --- Input --- */
+
+	.wdc-input {
+		height: 34px;
+		line-height: 34px;
+		border-radius: 4px;
+		border: 1px solid #ccc;
+		padding: 0 14px;
+		outline: 0;
+		font-size: $wdc-button-font-size;
+		color: $wdc-color-grey-a;
+
+		&.fluid {
+			width: 100%;
+		}
+
+		&:focus {
+			border-color: $wdc-color-blue;
+		}
+
+		&::placeholder {
+			color: $wdc-color-grey-d;
+		}
+
+		&::-ms-input-placeholder {
+			color: $wdc-color-grey-d;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+		}
+	}
+}

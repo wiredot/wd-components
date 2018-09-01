@@ -5,7 +5,7 @@
   border-radius: 3px;
   height: 36px;
   padding: 0 20px;
-  font-size: 16px;
+  font-size: 14px;
   outline: none;
   transition: background-color 0.2s;
   border: none;
@@ -14,7 +14,7 @@
   .wdc-button:hover {
     background-color: #b3b3b3; }
   .wdc-button.outline {
-    border: 2px solid #ccc;
+    box-shadow: 0 0 0 1px #ccc inset;
     background-color: transparent;
     color: #ccc; }
     .wdc-button.outline:hover {
@@ -26,7 +26,7 @@
     .wdc-button.primary:hover {
       background-color: #004466; }
     .wdc-button.primary.outline {
-      border: 2px solid #069;
+      box-shadow: 0 0 0 1px #069 inset;
       background-color: transparent;
       color: #069; }
       .wdc-button.primary.outline:hover {
@@ -38,7 +38,7 @@
     .wdc-button.secondary:hover {
       background-color: #665b00; }
     .wdc-button.secondary.outline {
-      border: 2px solid #980;
+      box-shadow: 0 0 0 1px #980 inset;
       background-color: transparent;
       color: #980; }
       .wdc-button.secondary.outline:hover {
@@ -50,7 +50,7 @@
     .wdc-button.tertiary:hover {
       background-color: #005555; }
     .wdc-button.tertiary.outline {
-      border: 2px solid #088;
+      box-shadow: 0 0 0 1px #088 inset;
       background-color: transparent;
       color: #088; }
       .wdc-button.tertiary.outline:hover {
@@ -62,7 +62,7 @@
     .wdc-button.red:hover {
       background-color: #b21e1e; }
     .wdc-button.red.outline {
-      border: 2px solid #db2828;
+      box-shadow: 0 0 0 1px #db2828 inset;
       background-color: transparent;
       color: #db2828; }
       .wdc-button.red.outline:hover {
@@ -74,7 +74,7 @@
     .wdc-button.orange:hover {
       background-color: #cf590c; }
     .wdc-button.orange.outline {
-      border: 2px solid #f2711c;
+      box-shadow: 0 0 0 1px #f2711c inset;
       background-color: transparent;
       color: #f2711c; }
       .wdc-button.orange.outline:hover {
@@ -86,7 +86,7 @@
     .wdc-button.yellow:hover {
       background-color: #cd9903; }
     .wdc-button.yellow.outline {
-      border: 2px solid #fbbd08;
+      box-shadow: 0 0 0 1px #fbbd08 inset;
       background-color: transparent;
       color: #fbbd08; }
       .wdc-button.yellow.outline:hover {
@@ -98,7 +98,7 @@
     .wdc-button.olive:hover {
       background-color: #8d9e13; }
     .wdc-button.olive.outline {
-      border: 2px solid #b5cc18;
+      box-shadow: 0 0 0 1px #b5cc18 inset;
       background-color: transparent;
       color: #b5cc18; }
       .wdc-button.olive.outline:hover {
@@ -110,7 +110,7 @@
     .wdc-button.green:hover {
       background-color: #198f35; }
     .wdc-button.green.outline {
-      border: 2px solid #21ba45;
+      box-shadow: 0 0 0 1px #21ba45 inset;
       background-color: transparent;
       color: #21ba45; }
       .wdc-button.green.outline:hover {
@@ -122,7 +122,7 @@
     .wdc-button.teal:hover {
       background-color: #00827c; }
     .wdc-button.teal.outline {
-      border: 2px solid #00b5ad;
+      box-shadow: 0 0 0 1px #00b5ad inset;
       background-color: transparent;
       color: #00b5ad; }
       .wdc-button.teal.outline:hover {
@@ -134,7 +134,7 @@
     .wdc-button.blue:hover {
       background-color: #1a69a4; }
     .wdc-button.blue.outline {
-      border: 2px solid #2185d0;
+      box-shadow: 0 0 0 1px #2185d0 inset;
       background-color: transparent;
       color: #2185d0; }
       .wdc-button.blue.outline:hover {
@@ -146,7 +146,7 @@
     .wdc-button.violet:hover {
       background-color: #502aa1; }
     .wdc-button.violet.outline {
-      border: 2px solid #6435c9;
+      box-shadow: 0 0 0 1px #6435c9 inset;
       background-color: transparent;
       color: #6435c9; }
       .wdc-button.violet.outline:hover {
@@ -158,7 +158,7 @@
     .wdc-button.purple:hover {
       background-color: #82299f; }
     .wdc-button.purple.outline {
-      border: 2px solid #a333c8;
+      box-shadow: 0 0 0 1px #a333c8 inset;
       background-color: transparent;
       color: #a333c8; }
       .wdc-button.purple.outline:hover {
@@ -170,7 +170,7 @@
     .wdc-button.pink:hover {
       background-color: #c71f7e; }
     .wdc-button.pink.outline {
-      border: 2px solid #e03997;
+      box-shadow: 0 0 0 1px #e03997 inset;
       background-color: transparent;
       color: #e03997; }
       .wdc-button.pink.outline:hover {
@@ -182,7 +182,7 @@
     .wdc-button.brown:hover {
       background-color: #805031; }
     .wdc-button.brown.outline {
-      border: 2px solid #a5673f;
+      box-shadow: 0 0 0 1px #a5673f inset;
       background-color: transparent;
       color: #a5673f; }
       .wdc-button.brown.outline:hover {
@@ -194,7 +194,7 @@
     .wdc-button.black:hover {
       background-color: black; }
     .wdc-button.black.outline {
-      border: 2px solid #000;
+      box-shadow: 0 0 0 1px #000 inset;
       background-color: transparent;
       color: #000; }
       .wdc-button.black.outline:hover {
@@ -206,13 +206,34 @@
     .wdc-button.grey:hover {
       background-color: #4d4d4d; }
     .wdc-button.grey.outline {
-      border: 2px solid #666;
+      box-shadow: 0 0 0 1px #666 inset;
       background-color: transparent;
       color: #666; }
       .wdc-button.grey.outline:hover {
         color: #4d4d4d;
         border-color: #4d4d4d; }
   .wdc-button.small {
-    font-size: 16px; }
+    font-size: 14px; }
+
+/* --- WD Components --- Input --- */
+.wdc-input {
+  height: 34px;
+  line-height: 34px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 0 14px;
+  outline: 0;
+  font-size: 14px;
+  color: #333; }
+  .wdc-input.fluid {
+    width: 100%; }
+  .wdc-input:focus {
+    border-color: #2185d0; }
+  .wdc-input::placeholder {
+    color: #ccc; }
+  .wdc-input::-ms-input-placeholder {
+    color: #ccc; }
+  .wdc-input:disabled {
+    opacity: 0.5; }
 
 /*# sourceMappingURL=wd-components.css.map */
