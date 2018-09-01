@@ -50,7 +50,7 @@ gulp.task('examples-scss', function() {
 		.pipe(sass())
 		.pipe(postcss(plugins))
 		.pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest( 'examples/css') )
+		.pipe(gulp.dest( 'examples/dist/css') )
 		.pipe(notify({
 			message: 'CSS generated',
 			title: 'WD Components'

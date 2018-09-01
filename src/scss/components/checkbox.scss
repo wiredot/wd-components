@@ -6,29 +6,43 @@
 	.wdc-form input[type=checkbox] {
 		cursor: pointer;
 		position: relative;
-		// opacity: 0 !important;
+		opacity: 0 !important;
 		outline: 0;
 		z-index: 3;
 		width: 17px;
 		height: 17px;
-		margin-right: 10px;
-		margin-bottom: 10px;
+		margin: 0 9px 0 0;
 
-		&:before, &:after {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 17px;
-			height: 17px;
-			content: '';
-			background: #fff;
-			border-radius: .21428571rem;
-			border: 1px solid #d4d4d5;
+		&+span {
+			position: relative;
+			margin-bottom: 3px;
+			display: inline-block;
+
+			&:before, &:after {
+				position: absolute;
+				top: 0;
+				left: -26px;
+				width: 17px;
+				height: 17px;
+				content: '';
+				background: #fff;
+				border-radius: .21428571rem;
+				border: 1px solid #d4d4d5;
+				box-sizing: border-box;
+			}
 		}
 
 		&:checked {
-			&:after {
-				content: '\e800';
+
+			&+span {
+				
+				&:after {
+					content: '';
+					background-image: url('../svg/checkbox.svg');
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 11px;
+				}
 			}
 		}
 
