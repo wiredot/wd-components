@@ -2,8 +2,13 @@
   "name": "wd-components",
   "version": "1.0.0",
   "description": "Frontend Components",
-  "main": "index.js",
+  "main": "src/scss/wd-components.scss",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com:wiredot/wd-components.git",
+    "type": "git"
+  },
+  "author": "Piotr Soluch <psoluch@wiredot.com>",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",

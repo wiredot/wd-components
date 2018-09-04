@@ -36,15 +36,17 @@ $wdc-button-padding: 0 20px !default;
 $wdc-button-height: 36px !default;
 $wdc-button-font-size: $wdc-font-size !default;
 
-$wdc-button-primary-background-color: $wdc-color-a !default;
 $wdc-button-primary-color: $wdc-color-white !default;
+$wdc-button-primary-background-color: $wdc-color-a !default;
 $wdc-button-primary-background-color-hover: darken( $wdc-color-a, 10% ) !default;
 
-$wdc-button-secondary-background-color: $wdc-color-b !default;
 $wdc-button-secondary-color: $wdc-color-white !default;
+$wdc-button-secondary-background-color: $wdc-color-b !default;
 $wdc-button-secondary-background-color-hover: darken( $wdc-color-b, 10% ) !default;
 
-$wdc-button-tertiary-background-color: $wdc-color-c !default;
 $wdc-button-tertiary-color: $wdc-color-white !default;
+$wdc-button-tertiary-background-color: $wdc-color-c !default;
 $wdc-button-tertiary-background-color-hover: darken( $wdc-color-c, 10% ) !default;
+
+$wdc-button-margin-bottom: 20px !default;
 
