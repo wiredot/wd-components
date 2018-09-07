@@ -14,7 +14,7 @@ gulp.task('default', ['examples']);
 gulp.task('examples', ['examples-scss']);
 
 gulp.task('watch', function() {
-	gulp.watch( 'examples/src/scss/**/*.scss', ['scss']);
+	gulp.watch( './**/*.scss', ['scss']);
 });
 
 gulp.task('scss', ['examples-scss']);

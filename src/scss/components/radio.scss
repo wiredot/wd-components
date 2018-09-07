@@ -44,7 +44,7 @@
 			&+span {
 
 				&:after {
-					background-color: $wdc-color-a;
+					background-color: $wdc-color-primary;
 					width: 7px;
 					height: 7px;
 					top: 5px;
@@ -59,7 +59,7 @@
 			&+span {
 				
 				&:before {
-					border: 1px solid $wdc-color-blue;
+					border: 1px solid $wdc-color-secondarylue;
 				}
 			}
 		}

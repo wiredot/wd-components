@@ -1,4 +1,4 @@
-$wdc-color-a: #069;
+$wdc-color-primary: #069;
 
 $wdc-components: ( 'reset', 'button', 'input', 'form', 'select', 'textarea', 'checkbox', 'radio');
 
@@ -55,7 +55,7 @@ body {
 	}
 
 	&.blue {
-		background-color: $wdc-color-blue;
+		background-color: $wdc-color-secondarylue;
 	}
 
 	&.violet {
@@ -71,11 +71,11 @@ body {
 	}
 
 	&.brown {
-		background-color: $wdc-color-brown;
+		background-color: $wdc-color-secondaryrown;
 	}
 
 	&.black {
-		background-color: $wdc-color-black;
+		background-color: $wdc-color-secondarylack;
 	}
 
 	&.grey-1 {

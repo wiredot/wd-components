@@ -29,14 +29,14 @@
 	.wdc-form button {
 		font-family: $wdc-font-family;
 		font-size: $wdc-button-font-size;
-		cursor: pointer;
-		display: inline-block;
+		cursor: $wdc-button-cursor;
+		display: $wdc-button-display;
 		border-radius: $wdc-button-border-radius;
 		height: $wdc-button-height;
 		padding: $wdc-button-padding;
-		outline: none;
-    	transition: background-color 0.2s;
-    	border: none;
+		outline: $wdc-button-outline;
+    	transition: $wdc-button-transition;
+    	border: $wdc-button-border;
     	margin-bottom: $wdc-button-margin-bottom;
 
     	@include wdc-button( $wdc-button-background-color, $wdc-button-color );
