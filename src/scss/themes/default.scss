@@ -111,5 +111,16 @@ $wdc-radio-focus-border: 1px solid $wdc-color-blue !default;
 
 // --------- Select ---------
 
+$wdc-select-height: 34px !default;
+$wdc-select-border-radius: 4px !default;
+$wdc-select-border: 1px solid $wdc-color-grey-1 !default;
+$wdc-select-padding: 0 14px !default;
+$wdc-select-outline: 0 !default;
+$wdc-select-color: $wdc-color-grey-5 !default;
+$wdc-select-transition: border-color 0.3s !default;
+
+$wdc-select-focus-color: $wdc-color-blue !default;
+$wdc-select-disabled-opacity: 0.5 !default;
+
 // --------- Textarea ---------
 
