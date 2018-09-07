@@ -18,26 +18,26 @@
 	.wdc-form input[type=week],
 	.wdc-form input[type=search] {
 		font-family: $wdc-font-family;
-		font-size: $wdc-button-font-size;
-		height: 34px;
-		line-height: 34px;
-		border-radius: 4px;
-		border: 1px solid $wdc-color-grey-1;
-		padding: 0 14px;
-		outline: 0;
-		color: $wdc-color-grey-5;
-		transition: border-color 0.2s;
+		font-size: $wdc-font-size;
+		height: $wdc-input-height;
+		line-height: $wdc-input-line-height;
+		border-radius: $wdc-input-border-radius;
+		border: $wdc-input-border;
+		padding: $wdc-input-padding;
+		outline: $wdc-input-outline;
+		color: $wdc-input-color;
+		transition: $wdc-input-transition;
 
 		&:focus {
-			border-color: $wdc-color-blue;
+			border-color: $wdc-input-focus-border-color;
 		}
 
 		&::placeholder {
-			color: $wdc-color-grey-1;
+			color: $wdc-input-placeholder-color;
 		}
 
 		&:disabled {
-			opacity: 0.5;
+			opacity: $wdc-input-disabled-opacity;
 		}
 	}
 }

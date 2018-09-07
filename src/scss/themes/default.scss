@@ -80,6 +80,19 @@ $wdc-form-label-margin-bottom: 5px !default;
 
 // --------- Input ---------
 
+$wdc-input-height: 34px !default;
+$wdc-input-line-height: 34px !default;
+$wdc-input-border-radius: 4px !default;
+$wdc-input-border: 1px solid $wdc-color-grey-1 !default;
+$wdc-input-padding: 0 14px !default;
+$wdc-input-outline: 0 !default;
+$wdc-input-color: $wdc-color-grey-5 !default;
+$wdc-input-transition: border-color 0.2s !default;
+
+$wdc-input-focus-border-color: $wdc-color-blue !default;
+$wdc-input-placeholder-color: $wdc-color-grey-1 !default;
+$wdc-input-disabled-opacity: 0.5;
+
 // --------- Radio ---------
 
 // --------- Select ---------
