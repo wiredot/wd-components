@@ -175,7 +175,7 @@ img {
 
 .wdc-fields {
   position: relative;
-  width: calc( 100% + 20px);
+  width: calc( 100% + $wdc-form-column-margin);
   margin-left: -20px; }
   .wdc-fields:after {
     clear: both;

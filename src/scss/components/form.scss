@@ -1,8 +1,8 @@
 @function wdc-width( $columns ) {
 	$column-ratio: $columns / 12 * 100;
-	$margin: 20;
+	$margin: $wdc-form-column-margin;
 
-	@return unquote( 'calc(' + $column-ratio + '% - ' + $margin + 'px)' );
+	@return unquote( 'calc(' + $column-ratio + '% - ' + $margin + ')' );
 }
 
 @if ( index($wdc-components, 'form') ) {
@@ -11,13 +11,13 @@
 
 	.wdc-form {
 		font-family: $wdc-font-family;
-		font-size: $wdc-button-font-size;
+		font-size: $wdc-font-size;
 	}
 
 	.wdc-fields {
 		position: relative;
-		width: calc( 100% + 20px );
-		margin-left: -20px;
+		width: calc( 100% + $wdc-form-column-margin );
+		margin-left: 0 - $wdc-form-column-margin;
 
 		&:after {
 			clear: both;
@@ -26,7 +26,7 @@
 		}
 		
 		.wdc-field {
-			margin-left: 20px;
+			margin-left: $wdc-form-column-margin;
 			float: left;
 			box-sizing: border-box;
 
@@ -83,17 +83,13 @@
 // 12 * 50 + 12 * 20 = 820
 
 	.wdc-field {
-		margin-bottom: 20px;
+		margin-bottom: $wdc-form-field-margin-bottom;
 		display: flex;
-        flex-direction: column;
-
-		&.required {
-			
-		}
+		flex-direction: column;
 
 		label {
 			display: block;
-			margin-bottom: 5px;
+			margin-bottom: $wdc-form-label-margin-bottom;
 			order: 1;
 		}
 
