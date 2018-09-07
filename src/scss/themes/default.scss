@@ -9,11 +9,11 @@ $wdc-color-yellow: #fbbd08 !default;
 $wdc-color-olive: #b5cc18 !default;
 $wdc-color-green: #21ba45 !default;
 $wdc-color-teal: #00b5ad !default;
-$wdc-color-secondarylue: #2185d0 !default;
+$wdc-color-blue: #2185d0 !default;
 $wdc-color-violet: #6435c9 !default;
 $wdc-color-purple: #a333c8 !default;
 $wdc-color-pink: #e03997 !default;
-$wdc-color-secondaryrown: #a5673f !default;
+$wdc-color-brown: #a5673f !default;
 
 $wdc-color-white: #fff !default;
 $wdc-color-grey-1: darken(#fff, 100% / 7) !default;
@@ -22,7 +22,7 @@ $wdc-color-grey-3: darken(#fff, 100% / 7 * 3) !default;
 $wdc-color-grey-4: darken(#fff, 100% / 7 * 4) !default;
 $wdc-color-grey-5: darken(#fff, 100% / 7 * 5) !default;
 $wdc-color-grey-6: darken(#fff, 100% / 7 * 6) !default;
-$wdc-color-secondarylack: #000 !default;
+$wdc-color-black: #000 !default;
 
 // --------- Fonts ---------
 $wdc-font-size: 14px !default;
@@ -56,6 +56,21 @@ $wdc-button-tertiary-background-color-hover: darken( $wdc-color-tertiary, 10% ) 
 $wdc-button-margin-bottom: 20px !default;
 
 // --------- Checkbox ---------
+
+$wdc-checkbox-cursor: pointer !default;
+$wdc-checkbox-position: relative !default;
+$wdc-checkbox-outline: 0 !default;
+$wdc-checkbox-width: 17px !default;
+$wdc-checkbox-height: 17px !default;
+$wdc-checkbox-margin-right: 9px !default;
+$wdc-checkbox-margin-bottom: 5px !default;
+$wdc-checkbox-border-radius: 3px !default;
+$wdc-checkbox-border: 1px solid $wdc-color-grey-1 !default;
+$wdc-checkbox-background: #fff !default;
+$wdc-checkbox-transition: border-color 0.3s !default;
+
+$wdc-checkbox-checked-background-image: url('../svg/checkbox.svg') !default;
+$wdc-checkbox-checked-background-size: 11px !default;
 
 // --------- Form ---------
 

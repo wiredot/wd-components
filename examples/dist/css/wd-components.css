@@ -409,23 +409,25 @@ img {
 /* --- WD Components --- Checkbox --- */
 .wdc-checkbox,
 .wdc-form input[type=checkbox] {
-  cursor: pointer;
-  position: relative;
-  opacity: 0 !important;
-  outline: 0;
-  z-index: 3;
   width: 17px;
   height: 17px;
-  margin: 0 9px 0 0; }
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  outline: 0;
+  z-index: 3;
+  margin: 0;
+  margin-right: 9px;
+  margin-bottom: 5px; }
   .wdc-checkbox + span,
   .wdc-form input[type=checkbox] + span {
     position: relative;
-    margin-bottom: 3px;
     display: inline-block;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
-            user-select: none; }
+            user-select: none;
+    line-height: 17px; }
     .wdc-checkbox + span:before, .wdc-checkbox + span:after,
     .wdc-form input[type=checkbox] + span:before,
     .wdc-form input[type=checkbox] + span:after {

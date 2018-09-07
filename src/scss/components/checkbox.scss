@@ -4,36 +4,38 @@
 
 	.wdc-checkbox, 
 	.wdc-form input[type=checkbox] {
-		cursor: pointer;
-		position: relative;
-		opacity: 0 !important;
-		outline: 0;
+		width: $wdc-checkbox-width;
+		height: $wdc-checkbox-height;
+		position: $wdc-checkbox-position;
+		opacity: 0;
+		cursor: $wdc-checkbox-cursor;
+		outline: $wdc-checkbox-outline;
 		z-index: 3;
-		width: 17px;
-		height: 17px;
-		margin: 0 9px 0 0;
+		margin: 0;
+		margin-right: $wdc-checkbox-margin-right;
+		margin-bottom: $wdc-checkbox-margin-bottom;
 
 		&+span {
 			position: relative;
-			margin-bottom: 3px;
 			display: inline-block;
 			user-select: none;
+			line-height: $wdc-checkbox-height;
 
 			&:before, &:after {
 				position: absolute;
 				top: 0;
-				left: -26px;
-				width: 17px;
-				height: 17px;
+				left: 0 - $wdc-checkbox-margin-right - $wdc-checkbox-width;
+				width: $wdc-checkbox-width;
+				height: $wdc-checkbox-height;
 				content: '';
 				box-sizing: border-box;
 			}
 
 			&:before {
-				border-radius: 3px;
-				border: 1px solid $wdc-color-grey-1;
-				background: #fff;
-				transition: border-color 0.3s;
+				border-radius: $wdc-checkbox-border-radius;
+				border: $wdc-checkbox-border;
+				background: $wdc-checkbox-background;
+				transition: $wdc-checkbox-transition;
 			}
 		}
 
@@ -43,10 +45,10 @@
 				
 				&:after {
 					content: '';
-					background-image: url('../svg/checkbox.svg');
+					background-image: $wdc-checkbox-checked-background-image;
 					background-repeat: no-repeat;
 					background-position: center;
-					background-size: 11px;
+					background-size: $wdc-checkbox-checked-background-size;
 				}
 			}
 		}
@@ -56,7 +58,7 @@
 			&+span {
 				
 				&:before {
-					border-color: $wdc-color-secondarylue;
+					border-color: $wdc-color-blue;
 				}
 			}
 		}
