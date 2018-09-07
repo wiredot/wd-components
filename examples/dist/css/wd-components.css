@@ -396,14 +396,13 @@ html {
 .wdc-form textarea {
   font-family: Lato;
   font-size: 14px;
-  height: 34px;
+  height: 70px;
   line-height: 20px;
   border-radius: 4px;
   border: 1px solid #dbdbdb;
   padding: 10px 14px;
   outline: 0;
   color: #494949;
-  height: 70px;
   transition: border-color 0.3s; }
   .wdc-textarea:focus,
   .wdc-form textarea:focus {
@@ -459,7 +458,7 @@ html {
     background-size: 11px; }
   .wdc-checkbox:focus + span:before,
   .wdc-form input[type=checkbox]:focus + span:before {
-    border-color: #2185d0; }
+    border: 1px solid #2185d0; }
 
 /* --- WD Components --- Radio --- */
 .wdc-radio,

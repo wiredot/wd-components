@@ -72,11 +72,15 @@ $wdc-checkbox-transition: border-color 0.3s !default;
 $wdc-checkbox-checked-background-image: url('../svg/checkbox.svg') !default;
 $wdc-checkbox-checked-background-size: 11px !default;
 
+$wdc-checkbox-focus-border: 1px solid $wdc-color-blue !default;
+
 // --------- Form ---------
 
 $wdc-form-column-margin: 20px !default;
 $wdc-form-field-margin-bottom: 20px !default;
 $wdc-form-label-margin-bottom: 5px !default;
+
+$wdc-form-required-color: $wdc-color-red !default;
 
 // --------- Input ---------
 
@@ -123,4 +127,16 @@ $wdc-select-focus-color: $wdc-color-blue !default;
 $wdc-select-disabled-opacity: 0.5 !default;
 
 // --------- Textarea ---------
+
+$wdc-textarea-height: 70px !default;
+$wdc-textarea-line-height: 20px !default;
+$wdc-textarea-border-radius: 4px !default;
+$wdc-textarea-border: 1px solid $wdc-color-grey-1 !default;
+$wdc-textarea-padding: 10px 14px !default;
+$wdc-textarea-outline: 0 !default;
+$wdc-textarea-color: $wdc-color-grey-5 !default;
+$wdc-textarea-transition: border-color 0.3s !default;
+
+$wdc-textarea-focus-color: $wdc-color-blue !default;
+$wdc-textarea-disabled-opacity: 0.5 !default;
 

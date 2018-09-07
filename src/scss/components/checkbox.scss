@@ -58,7 +58,7 @@
 			&+span {
 				
 				&:before {
-					border-color: $wdc-color-blue;
+					border: $wdc-checkbox-focus-border;
 				}
 			}
 		}

@@ -5,23 +5,22 @@
 	.wdc-textarea, 
 	.wdc-form textarea {
 		font-family: $wdc-font-family;
-		font-size: $wdc-button-font-size;
-		height: 34px;
-		line-height: 20px;
-		border-radius: 4px;
-		border: 1px solid $wdc-color-grey-1;
-		padding: 10px 14px;
-		outline: 0;
-		color: $wdc-color-grey-5;
-		height: 70px;
-		transition: border-color 0.3s;
+		font-size: $wdc-font-size;
+		height: $wdc-textarea-height;
+		line-height: $wdc-textarea-line-height;
+		border-radius: $wdc-textarea-border-radius;
+		border: $wdc-textarea-border;
+		padding: $wdc-textarea-padding;
+		outline: $wdc-textarea-outline;
+		color: $wdc-textarea-color;
+		transition: $wdc-textarea-transition;
 
 		&:focus {
-			border-color: $wdc-color-blue;
+			border-color: $wdc-textarea-focus-color;
 		}
 
 		&:disabled {
-			opacity: 0.5;
+			opacity: $wdc-textarea-disabled-opacity;
 		}
 	}
 }
