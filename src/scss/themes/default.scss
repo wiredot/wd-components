@@ -57,11 +57,11 @@ $wdc-button-margin-bottom: 20px !default;
 
 // --------- Checkbox ---------
 
+$wdc-checkbox-width: 17px !default;
+$wdc-checkbox-height: 17px !default;
 $wdc-checkbox-cursor: pointer !default;
 $wdc-checkbox-position: relative !default;
 $wdc-checkbox-outline: 0 !default;
-$wdc-checkbox-width: 17px !default;
-$wdc-checkbox-height: 17px !default;
 $wdc-checkbox-margin-right: 9px !default;
 $wdc-checkbox-margin-bottom: 5px !default;
 $wdc-checkbox-border-radius: 3px !default;
@@ -94,6 +94,20 @@ $wdc-input-placeholder-color: $wdc-color-grey-1 !default;
 $wdc-input-disabled-opacity: 0.5;
 
 // --------- Radio ---------
+
+$wdc-radio-width: 15px !default;
+$wdc-radio-height: 15px !default;
+$wdc-radio-margin-right: 9px !default;
+$wdc-radio-margin-bottom: 5px !default;
+$wdc-radio-background: #fff !default;
+$wdc-radio-border: 1px solid #d4d4d5 !default;
+$wdc-radio-transition: border-color 0.3s !default;
+
+$wdc-radio-checked-background-color: $wdc-color-primary !default;
+$wdc-radio-checked-width: 7px !default;
+$wdc-radio-checked-height: 7px !default;
+
+$wdc-radio-focus-border: 1px solid $wdc-color-blue !default;
 
 // --------- Select ---------
 
