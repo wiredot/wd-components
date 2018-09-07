@@ -47,5 +47,12 @@
 		max-width: 100%;
 		height: auto;
 	}
-}
 
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+}
